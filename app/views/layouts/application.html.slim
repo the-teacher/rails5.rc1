@@ -1,8 +1,10 @@
 doctype html
 html.h100p.w100p(lang='en')
-  head(data-log-js=Rails.env.development?)
+  head(data-the-log=Rails.env.development?)
     meta(charset='utf-8')
     title Rails 5. RC1
+
+    -# script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'

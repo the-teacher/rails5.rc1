@@ -1,6 +1,9 @@
 // https://github.com/rails/sprockets#sprockets-directives
 
-//= require jquery
+//= require components/jquery-3.0.0.js
 //= require jquery_ujs
-//= require turbolinks
 
+//= require the_log
+
+//= require turbolinks
+//= require turbolinks_callbacks

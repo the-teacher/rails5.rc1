@@ -6,6 +6,7 @@ gem 'rails', '>= 5.0.0.rc1', '< 5.1'
 # VIEW
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5.x'
+gem 'the_log'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
