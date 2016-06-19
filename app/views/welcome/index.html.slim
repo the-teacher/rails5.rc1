@@ -2,11 +2,15 @@
   .pt30.pb30
     h1.fs20.b.mb40 Post list
 
+    .fs16.mb40= paginate @posts
+
     - @posts.each_with_index do |post, index|
       .mb50
         .lh130.fs16.mb10
-          span.b= index.next
+          span.b= post.id
           '.
           = post.title
 
         = link_to 'read more', post, class: 'ptz--btn ptz--size-12'
+
+    .fs16= paginate @posts
