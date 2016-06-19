@@ -1,3 +1,7 @@
 /*
- *= require_self
+  *= require ptz/reset
+  *= require ptz/base
+  *= require ptz/framework
+
+  *= require_self
 */

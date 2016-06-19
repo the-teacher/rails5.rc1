@@ -1,0 +1,20 @@
+doctype html
+html.h100p.w100p(lang='en')
+  head(data-log-js=Rails.env.development?)
+    meta(charset='utf-8')
+    title Rails 5. RC1
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+    meta(http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1')
+    meta#env_token(name='env_token' content=Rails.env.to_s)
+    = favicon_link_tag image_url('/favicon.ico')
+
+    = csrf_meta_tags
+
+    = yield :js
+    = yield :css
+
+  body.h100p.w100p#top
+    = yield

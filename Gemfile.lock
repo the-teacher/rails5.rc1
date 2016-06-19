@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/the-teacher/protozaur.git
+  revision: 3d65120c1ab16b0014e2bd379bf7dfa3ebca4343
+  branch: master
+  specs:
+    protozaur (1.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -88,7 +95,6 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     pkg-config (1.1.7)
-    protozaur (1.1.0)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -187,7 +193,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   listen (~> 3.0.5)
-  protozaur
+  protozaur!
   pry-rails
   puma (~> 3.0)
   rails (>= 5.0.0.rc1, < 5.1)
