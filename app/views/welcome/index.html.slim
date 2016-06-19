@@ -1,5 +1,12 @@
-.ma.w900
+.ma.w900.ffa
   .pt30.pb30
-    h1.fs20.b.mb40 Welcome#index
+    h1.fs20.b.mb40 Post list
 
-    p Find me in app/views/welcome/index.html.slim
+    - @posts.each_with_index do |post, index|
+      .mb50
+        .lh130.fs16.mb10
+          span.b= index.next
+          '.
+          = post.title
+
+        = link_to 'read more', post, class: 'ptz--btn ptz--size-12'
