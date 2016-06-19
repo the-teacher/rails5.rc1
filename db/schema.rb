@@ -14,6 +14,8 @@
 ActiveRecord::Schema.define(version: 20160619073717) do
 
   create_table "comments", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "post_id"
     t.string   "contacts"
     t.text     "content"
     t.datetime "created_at", null: false
@@ -21,6 +23,7 @@ ActiveRecord::Schema.define(version: 20160619073717) do
   end
 
   create_table "posts", force: :cascade do |t|
+    t.integer  "user_id"
     t.string   "title"
     t.text     "content"
     t.datetime "created_at", null: false
